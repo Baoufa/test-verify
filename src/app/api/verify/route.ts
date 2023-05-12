@@ -68,8 +68,8 @@ export async function POST(req: Request) {
     const user: UserType = {
       // the userId is an app-specific, anonymous identifier of a vault
       // userId = hash(userVaultSecret, appId).
-     // id: result.getUserId(AuthType.VAULT) as string,
-     id: "123"
+      id: result.getUserId(AuthType.VAULT) as string,
+    //  id: "123"
     };
 
     // save the user in the user store DB
